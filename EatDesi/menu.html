@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>EatDesi — Menu</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<nav class="nav">
+  <div class="container nav-inner">
+    <a class="brand" href="index.html" aria-label="EatDesi Home">
+      <span class="brand-badge" aria-hidden="true"></span>
+      <span>EatDesi</span>
+    </a>
+
+    <div class="nav-links" role="navigation" aria-label="Primary">
+      <a href="index.html#featured">Featured</a>
+      <a href="#menu">Menu</a>
+      <a href="checkout.html">Checkout</a>
+    </div>
+
+    <div class="nav-actions">
+      <a class="pill" href="cart.html" aria-label="View cart">
+        <span aria-hidden="true">🛒</span>
+        <span>Cart</span>
+        <strong id="navCartCount">0</strong>
+      </a>
+    </div>
+  </div>
+</nav>
+
+<header class="section">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <h2 class="reveal" id="menu">Our products</h2>
+        <p class="lead reveal">Honey • Desi Ghee • Shakar • Gur • Spices (freshly packed)</p>
+      </div>
+      <a class="btn btn-primary" href="checkout.html">Go to Checkout</a>
+    </div>
+
+    <div class="filters reveal" aria-label="Category filters">
+      <button class="chip" type="button" data-filter="All" aria-pressed="true">All</button>
+      <button class="chip" type="button" data-filter="Honey" aria-pressed="false">Honey</button>
+      <button class="chip" type="button" data-filter="Ghee" aria-pressed="false">Desi Ghee</button>
+      <button class="chip" type="button" data-filter="Sweeteners" aria-pressed="false">Shakar & Gur</button>
+      <button class="chip" type="button" data-filter="Spices" aria-pressed="false">Spices</button>
+    </div>
+  </div>
+</header>
+
+<main class="section" style="padding-top: 0">
+  <div class="container">
+    <div id="menuGrid" class="row grid-3 fade-swap">
+
+      <!-- Honey -->
+      <article class="card reveal" data-category="Honey">
+        <div class="card-media">
+          <img alt="Honey" src="images/honey.PNG" />
+        </div>
+        <div class="card-body">
+          <div class="tag">Honey</div>
+          <div class="spacer-10"></div>
+          <h3 class="card-title">Honey (250g)</h3>
+          <p class="card-desc">Raw & unfiltered — perfect for warm water, chai, and breakfast.</p>
+          <div class="price-row">
+            <span class="price">Rs. 350</span>
+            <button class="btn btn-primary btn-small"
+              data-add-to-cart
+              data-id="honey-250g"
+              data-name="Honey (250g)"
+              data-price="350"
+              data-category="Honey"
+              data-image="images/honey.PNG"
+              data-desc="Raw & unfiltered honey — smooth taste and golden color."
+            >Add</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="card reveal" data-category="Honey">
+        <div class="card-media">
+          <img alt="Honey jar" src="images/honey.PNG" />
+        </div>
+        <div class="card-body">
+          <div class="tag">Honey</div>
+          <div class="spacer-10"></div>
+          <h3 class="card-title">Honey (500g)</h3>
+          <p class="card-desc">Best value jar — daily use for the whole family.</p>
+          <div class="price-row">
+            <span class="price">Rs. 650</span>
+            <button class="btn btn-primary btn-small"
+              data-add-to-cart
+              data-id="honey-500g"
+              data-name="Honey (500g)"
+              data-price="650"
+              data-category="Honey"
+              data-image="images/honey.PNG"
+              data-desc="Bigger jar for daily use."
+            >Add</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- Ghee -->
+      <article class="card reveal" data-category="Ghee">
+        <div class="card-media">
+          <img alt="Desi ghee" src="images/ghee.PNG" />
+        </div>
+        <div class="card-body">
+          <div class="tag">Desi Ghee</div>
+          <div class="spacer-10"></div>
+          <h3 class="card-title">Desi Ghee (500g)</h3>
+          <p class="card-desc">Traditional desi ghee — rich aroma and smooth texture.</p>
+          <div class="price-row">
+            <span class="price">Rs. 900</span>
+            <button class="btn btn-primary btn-small"
+              data-add-to-cart
+              data-id="ghee-500g"
+              data-name="Desi Ghee (500g)"
+              data-price="900"
+              data-category="Ghee"
+              data-image="images/ghee.PNG"
+              data-desc="Traditional desi ghee — rich aroma and smooth texture."
+            >Add</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="card reveal" data-category="Ghee">
+        <div class="card-media">
+          <img alt="Ghee" src="images/ghee.PNG" />
+        </div>
+        <div class="card-body">
+          <div class="tag">Desi Ghee</div>
+          <div class="spacer-10"></div>
+          <h3 class="card-title">Desi Ghee (1kg)</h3>
+          <p class="card-desc">Family size — perfect for cooking and desi desserts.</p>
+          <div class="price-row">
+            <span class="price">Rs. 1750</span>
+            <button class="btn btn-primary btn-small"
+              data-add-to-cart
+              data-id="ghee-1kg"
+              data-name="Desi Ghee (1kg)"
+              data-price="1750"
+              data-category="Ghee"
+              data-image="images/ghee.PNG"
+              data-desc="Family size — perfect for cooking and desi desserts."
+            >Add</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- Sweeteners -->
+      <article class="card reveal" data-category="Sweeteners">
+        <div class="card-media">
+          <img alt="Shakar" src="images/shakar.PNG" />
+        </div>
+        <div class="card-body">
+          <div class="tag">Shakar</div>
+          <div class="spacer-10"></div>
+          <h3 class="card-title">Shakar (1kg)</h3>
+          <p class="card-desc">Natural sweetness for chai, kheer, and daily use.</p>
+          <div class="price-row">
+            <span class="price">Rs. 260</span>
+            <button class="btn btn-primary btn-small"
+              data-add-to-cart
+              data-id="shakar-1kg"
+              data-name="Shakar (1kg)"
+              data-price="260"
+              data-category="Sweeteners"
+              data-image="images/shakar.PNG"
+              data-desc="Natural sweetness for chai, kheer, and daily use."
+            >Add</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="card reveal" data-category="Sweeteners">
+        <div class="card-media">
+          <img alt="Gur" src="images/gur.PNG" />
+        </div>
+        <div class="card-body">
+          <div class="tag">Gur</div>
+          <div class="spacer-10"></div>
+          <h3 class="card-title">Gur (1kg)</h3>
+          <p class="card-desc">Traditional jaggery — deep flavor, great for gur wali chai.</p>
+          <div class="price-row">
+            <span class="price">Rs. 320</span>
+            <button class="btn btn-primary btn-small"
+              data-add-to-cart
+              data-id="gur-1kg"
+              data-name="Gur (1kg)"
+              data-price="320"
+              data-category="Sweeteners"
+              data-image="images/gur.PNG"
+              data-desc="Traditional jaggery — deep flavor, perfect for winters."
+            >Add</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- Spices -->
+      <article class="card reveal" data-category="Spices">
+        <div class="card-media">
+          <img alt="Spices" src="images/spices.PNG" />
+        </div>
+        <div class="card-body">
+          <div class="tag">Spices</div>
+          <div class="spacer-10"></div>
+          <h3 class="card-title">Red Chili Powder (200g)</h3>
+          <p class="card-desc">Freshly ground — bold color and desi heat.</p>
+          <div class="price-row">
+            <span class="price">Rs. 280</span>
+            <button class="btn btn-primary btn-small"
+              data-add-to-cart
+              data-id="spice-chili-200g"
+              data-name="Red Chili Powder (200g)"
+              data-price="280"
+              data-category="Spices"
+              data-image="images/spices.PNG"
+              data-desc="Freshly ground — bold color and desi heat."
+            >Add</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="card reveal" data-category="Spices">
+        <div class="card-media">
+          <img alt="Spice bowls" src="images/spices.PNG" />
+        </div>
+        <div class="card-body">
+          <div class="tag">Spices</div>
+          <div class="spacer-10"></div>
+          <h3 class="card-title">Garam Masala (200g)</h3>
+          <p class="card-desc">Signature blend — perfect for karahi, qorma, and daal.</p>
+          <div class="price-row">
+            <span class="price">Rs. 320</span>
+            <button class="btn btn-primary btn-small"
+              data-add-to-cart
+              data-id="spice-garam-200g"
+              data-name="Garam Masala (200g)"
+              data-price="320"
+              data-category="Spices"
+              data-image="images/spices.PNG"
+              data-desc="Signature blend — perfect for karahi, qorma, and daal."
+            >Add</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="card reveal" data-category="Spices">
+        <div class="card-media">
+          <img alt="Haldi powder" src="images/spices.PNG" />
+        </div>
+        <div class="card-body">
+          <div class="tag">Spices</div>
+          <div class="spacer-10"></div>
+          <h3 class="card-title">Haldi Powder (200g)</h3>
+          <p class="card-desc">Pure turmeric powder for curry, daal, and daily desi cooking.</p>
+          <div class="price-row">
+            <span class="price">Rs. 240</span>
+            <button class="btn btn-primary btn-small"
+              data-add-to-cart
+              data-id="spice-haldi-200g"
+              data-name="Haldi Powder (200g)"
+              data-price="240"
+              data-category="Spices"
+              data-image="images/spices.PNG"
+              data-desc="Pure turmeric powder for curry, daal, and daily desi cooking."
+            >Add</button>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <div>
+      <div class="brand" style="margin-bottom: 8px">
+        <span class="brand-badge" aria-hidden="true"></span>
+        <span>EatDesi</span>
+      </div>
+      <p>Pure desi essentials — delivered with care.</p>
+      <div class="spacer-10"></div>
+      <p class="muted">Contact: +92 300 0000000 • support@eatdesi.pk</p>
+    </div>
+    <div class="social" aria-label="Social links">
+      <a class="btn btn-ghost btn-small" href="https://www.facebook.com/eatdesi.pk/" target="_blank" rel="noreferrer">Facebook</a>
+      <a class="btn btn-ghost btn-small" href="#" aria-disabled="true">Instagram</a>
+      <a class="btn btn-ghost btn-small" href="#" aria-disabled="true">TikTok</a>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
+
